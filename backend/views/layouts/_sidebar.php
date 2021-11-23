@@ -1,0 +1,29 @@
+<?php
+/**
+ * @User GJKnOcKOuT
+ * @Project yii-application
+ * @Date 18/11/2021
+ */
+
+use yii\bootstrap4\Nav;
+
+?>
+
+<aside>
+    <?php echo Nav::widget([
+        'options' => [
+            'class' => 'd-flex flex-column nav-pills'
+        ],
+        'items' => [
+            [
+                'label' => 'Dashboard',
+                'url' => ['/site/index']
+            ],
+            [
+                'label' => 'Videos',
+                'url' => ['/video/index']
+            ]
+        ]
+    ]) ?>
+
+</aside>
